@@ -5,10 +5,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Legal-Solution</title>
+    <title>Justice Legal</title>
+    <link rel="shortcut icon" href="./images/business.png" type="image/x-icon">
     <!-- daisy Ui link -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
 
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -18,16 +26,71 @@
     <!-- costom style -->
     <style>
         .font {
-            font-family: 'Manrope', sans-serif;
+            font-family: 'EB Garamond', serif;
+        }
+
+        .discription {
+            font-family: 'Poppins', sans-serif;
         }
     </style>
 </head>
 
 <body>
-    <header>
-        <nav>
-          <a href="">home</a>
+    <header class="max-w-[1340px] mx-auto px-8 md:px-16 lg:px-24  my-5">
+        <!-- navigation section start -->
+        <nav class="navbar  bg-base-100 mb-16">
+            <div class="navbar-start discription">
+                <div class="dropdown">
+                    <label tabindex="0" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </label>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a>Item 1</a></li>
+                        <li><a>Item 1</a></li>
+                        <li><a>Item 1</a></li>
+                        <li><a>Item 1</a></li>
+                        <li><a>Item 3</a></li>
+                    </ul>
+                </div>
+                <div class="btn btn-ghost normal-case text-xl">
+                    <img class="w-20 md:w-full" src="./images/logo2.png" alt="">
+                </div>
+
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a>Home</a></li>
+                    <li><a>Service <i class="fa-solid fa-chevron-right"></i></a></li>
+                    <li><a>Cases <i class="fa-solid fa-chevron-right"></i></a></li>
+                    <li><a>Blog <i class="fa-solid fa-chevron-right"></i></a></li>
+                    <li><a>Contact Us <i class="fa-solid fa-chevron-right"></i></a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <a class="btn mt-6 md:mt-0 text-[14px] md:text-lg font-medium bg-[#B68C5A]">Consultation</a>
+            </div>
         </nav>
+
+        <!-- banner section start -->
+        <div class="hero"
+            style="background-image: url('./images/banner.png'); background-position: center;background-size: cover;background-repeat: no-repeat;">
+            <div class="hero-overlay bg-opacity-60"></div>
+            <div class=" text-center text-neutral-content">
+                <div class=" py-24">
+                    <h1 class="mb-5 text-3xl md:text-7xl font-extrabold text-[#FFF]  font">We Provide Effective <br> Legal Solutions</h1>
+                    <p class="mb-5  md:max-w-[680px] mx-auto text-[#E7E7E7] discription">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                    <div class="flex flex-col md:flex-row gap-2 justify-center items-center">
+                        <input type="text" placeholder="Search your services" class="input input-bordered w-full max-w-xs" />
+                        <a class="btn mt-6 md:mt-0 text-[14px] md:text-lg font-medium bg-[#B68C5A] border-0">Search</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
 
     <main>
